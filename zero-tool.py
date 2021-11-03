@@ -1,7 +1,7 @@
 import os
 from colorama import Fore
 
-print(Fore.RED+"""
+print(Fore.MAGENTA+"""
 
  _______  _______  _______  _______         _______ __________________ _______  _______  _        _______  _______ 
 / ___   )(  ____ \(  ____ )(  ___  )       (  ___  )\__   __/\__   __/(  ___  )(  ____ \| \    /\(  ____ \(  ____ )
@@ -19,11 +19,12 @@ BY: DEV7KNIGHT X ASJAD
 
 print(Fore.YELLOW+"""
 
-1.IP SCANNER            | 6.Port-Scanner                     
-2.Discord-Nuke          | 7.Sub-Domain-Scanner
-3.Discord-BruteForce    | 8.DDOS-TOOL
-4.Email-Boomber         | 9:Discord-Token-Checker
-5.Phone-Locator         | 
+1.IP SCANNER            | 7.Sub-Domain-Scanner      
+2.Discord-Nuke          | 8.DDOS-TOOL
+3.Discord-BruteForce    | 9:Discord-Token-Checker
+4.Email-Boomber         | 10.Proxies-Generator
+5.Phone-Locator         | 11.Email-Generator
+6.Port-Scanner          | 12.Zero-RaidTool
 """)
 
 command = input('> ')
@@ -54,6 +55,18 @@ elif command == '8':
 
 elif command == '9':
     os.system('cmd /k "python Discord-Token-Checker.py"')
+
+
+elif command == '10':
+    os.system('cmd /k "python proxies-generator.py"')
+
+elif command == '11':
+    os.system('cmd /k "python email-generator.py"')
+
+
+elif command == '12':
+    os.system('cmd /k "python raidtool.py"')    
+   
 
 else:
   print('Please choose the correct one dont be dumb')
